@@ -1,0 +1,397 @@
+@font-face {
+  font-family:mountain ;
+  src: url(MountainsofChristmas-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* VIDEO BACKGROUND */
+#vid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  
+}
+
+#vid video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+/* LOGO */
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+#logo img {
+  width: 500px;
+  height: 200px;
+  object-fit: contain;
+  margin-top: 20px;
+  padding-right:280px;
+  left: 0;
+  resize: both;
+  position:fixed
+
+  
+}
+
+/* NAVBAR */
+#navbar {
+  position: relative;
+  z-index: 50;
+  padding: 20px 40px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#navbar a {
+  padding: 10px 50px;
+  text-decoration: none;
+  font-family:mountain;
+  font-size: 34px;
+  color: #2f1d47;
+  transition: 0.3s ease;
+}
+
+#navbar a:hover {
+  opacity: 0.8;
+}
+
+/* HEADINGS */
+h1 {
+  font-family: mountain;
+  font-size:75px;
+  padding: 30px;
+  text-align: right;
+  color: rgb(94, 46, 12);
+  margin-bottom: 0;
+  position: relative;
+  z-index: 10;
+  padding-top: 150px;
+}
+
+h2 {
+  text-align: right;
+  color: rgb(94, 46, 12);
+  margin-top: 0;
+  font-size: larger;
+  padding: 0 30px;
+  position: relative;
+  z-index: 10;
+}
+
+h3 {
+  text-align: right;
+  line-height: 1.4;
+  text-rendering: geometricPrecision;
+  font-size: small;
+  padding: 20px 30px;
+  position: relative;
+  z-index: 10;
+}
+
+/* CARDS */
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.card{
+  width: 325px;
+  background-color: #ffc9f5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.card img{
+  width: 100%;
+  height: auto;
+}
+
+#home{
+  font-style: italic;
+  
+  text-align: center;
+  font-family: mountain;
+  font-size: 70px;
+  margin-top: 500px;
+}
+
+
+
+.reg-btn {
+  background: #6a4c93;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 20px auto;
+  display: block;
+}
+
+.reg-btn:hover {
+  background: #3c00a0;
+  transform: scale(1.05);
+}
+
+.reg-btn a {
+  color: white;
+  text-decoration: none;
+  font-family: mountain;
+  font-size: large;
+  letter-spacing: 1px;
+}
+
+.form{
+  width: 100%;
+  height: 100vh;
+  background-image: url(bgimg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  padding-right: 200px;
+  opacity: 1;
+}
+
+.form-h1{
+  align-content: center;
+  text-align: center;
+}
+
+
+
+
+
+
+
+.form-box {
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  opacity: 0.8;
+  padding: 50px 60px 70px;
+  text-align: center;
+  padding-right: 50px;
+}
+
+/* .form-box h1{
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #3c00a0;
+  position: relative;
+  text-align: center; /* Explicitly centered */
+/* } */
+
+.form-box h1::after{
+  text-align: center;
+  content: '';
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #3c00a0;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+.input-field{
+  background: #eaeaea;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  
+}
+
+input{
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+
+.input-field i{
+  margin-left: 15px;
+  color: #999;
+}
+
+form p{
+  text-align: left;
+  font-size: 13px;
+}
+
+form p a{
+  text-decoration: none;
+  color: #3c00a0;
+}
+
+
+.gender-field {
+  background: #eaeaea;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  gap: 15px;
+}
+
+.gender-field i {
+  color: #999;
+}
+
+.gender-field span {
+  font-size: 14px;
+  color: #999;
+  margin-right: 5px;
+}
+
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+.gender-field input[type="radio"] {
+  display: none;
+}
+
+.gender-field label {
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+.gender-field label::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.2s ease;
+}
+
+
+.gender-field input[type="radio"]:checked + label {
+  color: #3c00a0;
+  font-weight: 600;
+}
+
+.gender-field input[type="radio"]:checked + label::before {
+  border-color: #3c00a0;
+  background: #3c00a0;
+  box-shadow: inset 0 0 0 3px white;
+}
+
+/* BUTTONS */
+.btn-field {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.btn-field button {
+  width: 48%;
+  padding: 12px;
+  border: none;
+  border-radius: 3px;
+  background: #3c00a0;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-field button:hover {
+  background: #6a4c93;
+}
+
+
+/* SIGN IN PAGE */
+.sign {
+  width: 100%;
+  height: 100vh;
+  background-image: url(bgimg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.signinform-box {
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 50px 60px 70px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.sign-h1{
+  align-items: center;
+  text-align: center;
+}
+
+#navbar button {
+  background: #6a4c93;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#navbar button:hover {
+  background: #3c00a0;
+}
+
+#navbar button a {
+  color: white;
+  text-decoration: none;
+  font-family: mountain;
+  font-size: large;
+}
